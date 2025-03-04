@@ -1,0 +1,23 @@
+{
+  "name": "test_task_em",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mekerial/test_task_em",
+  "author": "mekerial",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon --inspect dist/index.js",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.9",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}
