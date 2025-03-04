@@ -1,6 +1,11 @@
-import express from 'express';
+import {runDb} from "./db/db";
+import {app} from "./settings";
 
-const app = express();
-app.use(express.json());
+const port = 3000;
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+
+
+app.set('trust proxy', true)
+app.listen(port, async () => {
+    await runDb()
+})
